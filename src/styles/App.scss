@@ -1,0 +1,16 @@
+//? GLOBAL
+@use './global/mixins';
+@use './global/reset';
+
+//? COMPONENTS
+@use '../components/button/Button';
+@use '../components/header/Header';
+@use '../components/hero/Hero';
+@use '../components/stats/Stats';
+@use '../components/brands/Brands';
+@use '../components/shop/Shop';
+@use '../components/creations/Creations';
+@use '../components/card/Card';
+@use '../components/card/CardUser';
+@use '../components/banner/Banner';
+@use '../components/footer/Footer';
