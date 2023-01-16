@@ -15,15 +15,14 @@
     -webkit-text-fill-color: transparent;
   }
   &-nav {
+    @include flex(column, nowrap, center, center);
   }
   &-ul {
     @include flex(row, wrap, center, center);
-    gap: clamp(1.25rem, 2.5vw, 5rem);
-  }
-  &-li {
+    gap: clamp(2.5rem, 2.5vw, 5rem);
   }
   &-a {
-    font-size: clamp(0.75rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     font-weight: 400;
   }
   &-btn {
@@ -42,7 +41,20 @@
 @include mediamax(796px) {
   .header {
     &-nav {
-      display: none;
+      height: 0;
+      width: 100%;
+      overflow: hidden;
+      opacity: 0;
+      transition: 500ms ease-in-out;
+
+      &-active {
+        height: 20rem;
+        opacity: 1;
+      }
+    }
+    &-ul {
+      @include flex(column, nowrap, center, center);
+      padding: clamp(2rem, 2vw, 4rem);
     }
     &-btn {
       display: none;

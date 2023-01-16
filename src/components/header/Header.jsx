@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../../context/global/GlobalContext';
 
@@ -9,19 +9,23 @@ const Header = () => {
 
   const navbarLi = navbar.map((cadaLi) => <HeaderLi key={cadaLi} text={cadaLi} />); // COMPONENT
 
+  const [toggle, updateToggle] = useState(false);
+
+  const handleToggle = () => updateToggle(!toggle);
+
   return (
     <header className="header">
       {/* TITLE */}
       <h2 className="header-title">{title}</h2>
       {/* BUTTON MENU */}
-      <button className="header-menu">
+      <button onClick={handleToggle} className="header-menu">
         <img
           src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673897021/apollonft/main_o9q12x.svg"
           alt="icono de menu"
         />
       </button>
       {/* NAVBAR */}
-      <nav className="header-nav">
+      <nav className={`header-nav ${toggle ? 'header-nav-active' : ''}`}>
         <ul className="header-ul">{navbarLi}</ul>
       </nav>
       {/* BUTTON */}
