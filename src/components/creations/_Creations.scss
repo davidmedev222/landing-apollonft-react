@@ -4,16 +4,16 @@
 // STYLES
 .create {
   @include flex(row, wrap, center, center);
-  gap: clamp(1rem, 2vw, 4rem);
+  gap: clamp(2rem, 2vw, 4rem);
   padding: clamp(1rem, 2vw, 4rem) clamp(1.5rem, 7.5vw, 15rem);
 
   &-title {
-    font-size: clamp(1.5rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 6rem);
     font-weight: 700;
     flex-basis: 100%;
   }
   &-art {
-    flex-basis: clamp(300px, 100%, 340px);
+    flex-basis: clamp(280px, 23.75vw, 47.5rem);
     flex-grow: 1;
   }
 }
