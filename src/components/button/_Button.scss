@@ -1,8 +1,8 @@
 .btn {
-  font-size: clamp(0.5rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1vw, 2rem);
   font-weight: 400;
   background: var(--gradient-one);
   border-radius: clamp(1.5rem, 3vw, 6rem);
-  padding: clamp(0.5rem, 1vw, 2rem) clamp(1rem, 2vw, 4rem);
+  padding: clamp(1rem, 1vw, 2rem) clamp(2rem, 2vw, 4rem);
   margin: 0 auto;
 }
