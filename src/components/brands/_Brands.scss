@@ -5,10 +5,9 @@
 .brands {
   @include flex(row, wrap, center, center);
   gap: clamp(2.5rem, 5vw, 10rem);
-  padding: clamp(1rem, 2vw, 4rem) clamp(1.5rem, 7.5vw, 15rem);
+  padding: clamp(3rem, 3.5vw, 7rem) clamp(1.5rem, 7.5vw, 15rem);
 
-  &-li {
-  }
   &-img {
+    width: clamp(8.5rem, 8.75vw, 17.5rem);
   }
 }
