@@ -1,0 +1,27 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.card-user {
+  @include flex(row, nowrap, flex-start, center);
+  gap: clamp(0.35rem, 0.75rem, 1.5rem);
+  padding: clamp(0.5rem, 1vw, 2rem);
+  border-radius: clamp(0.5rem, 1vw, 2rem);
+  background-color: #251163;
+
+  &-img {
+    width: clamp(2.5rem, 3.75vw, 7.5rem);
+  }
+  &-header {
+    @include flex(column, nowrap, center, flex-start);
+    gap: clamp(0.35rem, 0.75rem, 1.5rem);
+  }
+  &-name {
+    font-size: clamp(0.75rem, 1.5vw, 3rem);
+    font-weight: 600;
+  }
+  &-stat {
+    font-size: clamp(0.65rem, 1.25vw, 2.5rem);
+    font-weight: 400;
+  }
+}

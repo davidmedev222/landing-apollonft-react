@@ -1,0 +1,21 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.card {
+  @include flex(column, nowrap, center, flex-start);
+  gap: clamp(0.35rem, 0.75vw, 1.5rem);
+  padding: clamp(0.5rem, 1vw, 2rem);
+
+  &-icon {
+    width: clamp(1.5rem, 3vw, 6rem);
+  }
+  &-title {
+    font-size: clamp(0.75rem, 1.5vw, 3rem);
+    font-weight: 600;
+  }
+  &-paragraph {
+    font-size: clamp(0.75rem, 1.25vw, 2.5rem);
+    font-weight: 400;
+  }
+}
