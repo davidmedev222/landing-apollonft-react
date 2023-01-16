@@ -1,0 +1,72 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.footer {
+  display: grid;
+  align-items: flex-start;
+  justify-items: flex-start;
+  grid-template:
+    'title navbar'
+    'paragraph navbar'
+    'socials navbar'
+    'copyright copyright'
+    / 1fr 3fr;
+  gap: clamp(1rem, 2vw, 4rem);
+  padding: clamp(1.25rem, 2.5vw, 5rem) clamp(1.5rem, 7.5vw, 15rem);
+
+  &-title {
+    grid-area: title;
+    font-size: clamp(1.15rem, 2.25vw, 4.5rem);
+    font-weight: 700;
+    background: var(--gradient-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-paragraph {
+    grid-area: paragraph;
+    color: #999999;
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-weight: 400;
+  }
+  &-socials {
+    grid-area: socials;
+    @include flex(row, wrap, center, center);
+    gap: clamp(0.75rem, 1.5vw, 3rem);
+  }
+  &-li {
+  }
+  &-icon {
+    width: clamp(0.75rem, 1.5vw, 3rem);
+  }
+  &-nav {
+    grid-area: navbar;
+    justify-self: center;
+    @include flex(row, wrap, center, center);
+    gap: clamp(4.35rem, 8.75vw, 17.5rem);
+  }
+  &-ul {
+    @include flex(column, nowrap, center, flex-start);
+    gap: clamp(0.25rem, 0.5vw, 1rem);
+  }
+  &-subtitle {
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-weight: 600;
+    padding: 0 0 clamp(0.25rem, 0.5vw, 1rem) 0;
+  }
+  &-link {
+  }
+  &-a {
+    color: #999999;
+    font-size: clamp(0.4688rem, 0.9375vw, 1.875rem);
+  }
+  &-copyright {
+    grid-area: copyright;
+    justify-self: center;
+    color: #98a2b3;
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-weight: 400;
+    padding: clamp(1rem, 2vw, 4rem) 0 0 0;
+  }
+}
