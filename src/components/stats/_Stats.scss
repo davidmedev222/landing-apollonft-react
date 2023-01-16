@@ -1,0 +1,22 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.stats {
+  @include flex(row, nowrap, flex-start, center);
+  padding: 0 clamp(1.5rem, 7.5vw, 15rem);
+  gap: clamp(1rem, 2vw, 2rem);
+
+  &-li {
+    @include flex(column, nowrap, center, flex-start);
+    gap: clamp(0.25rem, 0.5vw, 1rem);
+  }
+  &-title {
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-weight: 400;
+  }
+  &-stat {
+    font-size: clamp(1rem, 1.75vw, 3.5rem);
+    font-weight: 700;
+  }
+}
