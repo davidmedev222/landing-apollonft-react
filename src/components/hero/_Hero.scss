@@ -1,0 +1,76 @@
+// MIXINS
+@import '../../styles/global/mixins';
+
+// STYLES
+.hero {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template:
+    'title title images' auto
+    'button paragraph images' auto
+    / auto 1fr 1fr;
+  padding: clamp(2.5rem, 5vw, 10rem) clamp(1.5rem, 7.5vw, 15rem);
+  gap: clamp(1rem, 2vw, 4rem);
+
+  &-title {
+    grid-area: title;
+    font-size: clamp(3.5rem, 6vw, 12rem);
+    font-weight: 800;
+  }
+  &-span {
+    background-image: var(--gradient-one);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-button {
+    grid-area: button;
+    font-size: clamp(1rem, 1.25vw, 2.5rem);
+    font-weight: 600;
+    padding: clamp(1.25rem, 2vw, 4rem) clamp(2.25rem, 4vw, 8rem);
+    background-image: var(--gradient-one);
+    border-radius: clamp(3rem, 3vw, 6rem);
+  }
+  &-paragraph {
+    grid-area: paragraph;
+    font-size: clamp(0.875rem, 1vw, 2rem);
+    font-weight: 400;
+  }
+  &-images {
+    grid-area: images;
+    position: relative;
+    width: clamp(15rem, 22.5vw, 25rem);
+    height: clamp(17.625rem, 27vw, 54rem);
+    border-radius: clamp(0.5rem, 1vw, 2rem);
+  }
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &-one {
+      z-index: 1;
+    }
+    &-two {
+      left: 7%;
+      top: -7%;
+    }
+  }
+}
+
+// MEDIAQUERYS
+@include mediamax(796px) {
+  .hero {
+    grid-template:
+      'title'
+      'paragraph'
+      'button'
+      'images'
+      / 1fr;
+
+    &-images {
+      margin: clamp(3rem, 3vw, 3rem) 0;
+    }
+  }
+}
