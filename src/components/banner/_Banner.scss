@@ -6,9 +6,9 @@
   @include flex(column, nowrap, center, center);
   gap: clamp(1.25rem, 2.5vw, 5rem);
   background: var(--gradient-one);
-  margin: clamp(3.25rem, 5.75rem, 10.5rem) clamp(1.5rem, 7.5vw, 15rem);
-  padding: clamp(2.25rem, 4.5vw, 9rem) clamp(10rem, 20.75vw, 41.5rem);
-  border-radius: clamp(0.5rem, 1vw, 2rem);
+  margin: clamp(3rem, 5.75vw, 10.5rem) 0;
+  padding: clamp(2rem, 4.5vw, 9rem) 0;
+  border-radius: clamp(1rem, 1vw, 2rem);
 
   &-title {
     font-size: clamp(1.5rem, 3vw, 6rem);
