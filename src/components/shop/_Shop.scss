@@ -5,24 +5,22 @@
 .shop {
   @include flex(column, nowrap, center, flex-start);
   gap: clamp(1rem, 2vw, 4rem);
-  padding: clamp(3.25rem, 5.75rem, 10.5rem) clamp(1.5rem, 7.5vw, 15rem);
+  padding: clamp(3.25rem, 5.75vw, 10.5rem) clamp(1.5rem, 7.5vw, 15rem);
 
   &-title {
-    font-size: clamp(1.5rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 6rem);
     font-weight: 700;
   }
   &-ul {
     @include flex(row, wrap, flex-start, center);
     gap: clamp(0.75rem, 1.5vw, 3rem);
   }
-  &-li {
-  }
   &-btn-filter {
-    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-size: clamp(0.75rem, 1vw, 2rem);
     font-weight: 600;
     background: #39324d;
     border-radius: clamp(1.5rem, 3vw, 6rem);
-    padding: clamp(0.5rem, 1vw, 2rem) clamp(1rem, 2vw, 4rem);
+    padding: clamp(0.5rem, 1vw, 2rem) clamp(2rem, 2vw, 4rem);
 
     &-active {
       background: var(--gradient-one);
@@ -30,14 +28,14 @@
   }
   &-content {
     @include grid();
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: clamp(0.5rem, 1.25vw, 2.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(clamp(15.625rem, 15.625vw, 31.25rem), 1fr));
+    gap: clamp(1.25rem, 1.25vw, 2.5rem);
     width: 100%;
   }
   &-art {
     @include flex(column, nowrap, center, flex-start);
-    gap: clamp(0.35rem, 0.75vw, 1.5rem);
-    padding: clamp(0.35rem, 0.75vw, 1.5rem);
+    gap: clamp(0.625rem, 0.75vw, 1.5rem);
+    padding: clamp(0.625rem, 0.75vw, 1.5rem);
     border-radius: clamp(0.5rem, 1vw, 2rem);
     background-color: #ffffff;
   }
@@ -46,25 +44,25 @@
   }
   &-name {
     color: #242323;
-    font-size: clamp(0.5625rem, 1.125vw, 2.25rem);
+    font-size: clamp(1.125rem, 1.125vw, 2.25rem);
     font-weight: 700;
   }
   &-header {
     width: 100%;
     @include flex(row, nowrap, flex-start, center);
-    gap: clamp(0.25rem, 0.5vw, 1rem);
+    gap: clamp(0.375rem, 0.5vw, 1rem);
   }
   &-icon {
-    width: clamp(0.625rem, 2.5vw, 10rem);
+    width: clamp(2.5rem, 2.5vw, 10rem);
   }
   &-value {
     color: #815ee3;
-    font-size: clamp(0.35rem, 0.75vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.75vw, 1.5rem);
     font-weight: 500;
   }
   &-page {
     color: #989898;
-    font-size: clamp(0.35rem, 0.75vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.75vw, 1.5rem);
     font-weight: 400;
     margin-left: auto;
   }
@@ -74,7 +72,7 @@
   }
   &-hour {
     color: #1c51fe;
-    font-size: clamp(0.375rem, 0.75vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.75vw, 1.5rem);
     font-weight: 400;
     padding: clamp(0.25rem, 0.5vw, 1rem);
     border-radius: clamp(0.5rem, 1vw, 2rem);
@@ -82,7 +80,16 @@
   }
   &-bid {
     color: #1c51fe;
-    font-size: clamp(0.375rem, 0.75vw, 1.5rem);
+    font-size: clamp(0.75rem, 0.75vw, 1.5rem);
     font-weight: 700;
+  }
+}
+
+// MEDIAQUERYS
+@include mediamax(796px) {
+  .shop {
+    &-ul {
+      justify-content: center;
+    }
   }
 }
