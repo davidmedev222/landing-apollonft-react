@@ -12,11 +12,18 @@
     gap: clamp(0.25rem, 0.5vw, 1rem);
   }
   &-title {
-    font-size: clamp(0.5rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     font-weight: 400;
   }
   &-stat {
-    font-size: clamp(1rem, 1.75vw, 3.5rem);
+    font-size: clamp(1.75rem, 1.75vw, 3.5rem);
     font-weight: 700;
+  }
+}
+
+// MEDIAQUERYS
+@include mediamax(796px) {
+  .stats {
+    justify-content: space-between;
   }
 }
