@@ -8,8 +8,7 @@
   --background-one: #110929;
   --background-two: #251163;
   // GRADIENTS
-  --gradient-one: linear-gradient(101.54deg, #b235ff -9.3%, #001447 70.99%);
-  --gradient-two: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
+  --gradient-one: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   // TYPOGRAPHY
   --family-one: 'Inter', sans-serif;
 }
@@ -52,12 +51,17 @@
   color: var(--background-one);
 }
 
+body {
+  background-color: var(--background-one);
+  max-width: 3500px;
+  margin: 0 auto;
+}
+
 #root {
   min-height: 100vh;
   color: var(--text-one);
   font-size: 100%;
   font-family: var(--family-one);
-  background-color: var(--background-one);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
