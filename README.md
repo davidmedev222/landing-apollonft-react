@@ -12,7 +12,6 @@
      <li><a href="#demo">Demo</a></li>
      <li><a href="#about-the-project">About The Project</a></li>
      <li><a href="#technologies-used">Technologies Used</a></li>
-     <li><a href="#cloning">Cloning</a></li>
 </ol>
 
 # **DEMO**
@@ -26,29 +25,3 @@ Apollo NFT, landing page where you can find information about the nft market and
 # **TECHNOLOGIES USED**
 
 Use of `React` for the interface, `Sass` for the styles, `Git` for project version control.
-
-# **CLONING**
-
-1. Cloning of the project
-
-```
-git clone https://github.com/davidmedev222/landing-apollonft-react.git
-```
-
-2. Enter the project folder
-
-```
-cd landing-apollonft-react
-```
-
-3. Installing dependencies
-
-```
-npm install
-```
-
-4. Project execution
-
-```
-npm run dev
-```
