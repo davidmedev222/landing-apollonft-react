@@ -9,9 +9,9 @@
 # **📑GUIDE**
 
 <ol>
-     <li><a href="#-demo">Demo</a></li>
-     <li><a href="#-about-the-project">About The Project</a></li>
-     <li><a href="#-technologies-used">Technologies Used</a></li>
+     <li><a href="#demo">Demo</a></li>
+     <li><a href="#about-the-project">About The Project</a></li>
+     <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
 
 # **💥DEMO**
