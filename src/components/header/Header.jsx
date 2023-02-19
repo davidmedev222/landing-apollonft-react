@@ -1,47 +1,47 @@
-import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { GlobalContext } from '../../context/global/GlobalContext';
+import { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { GlobalContext } from '../../context/global/GlobalContext'
 
 const Header = () => {
-  const { header } = useContext(GlobalContext);
+  const { header } = useContext(GlobalContext)
 
-  const { title, navbar, button } = header;
+  const { title, navbar, button } = header
 
-  const navbarLi = navbar.map((cadaLi) => <HeaderLi key={cadaLi} text={cadaLi} />); // COMPONENT
+  const navbarLi = navbar.map((cadaLi) => <HeaderLi key={cadaLi} text={cadaLi} />) // COMPONENT
 
-  const [toggle, updateToggle] = useState(false);
+  const [toggle, updateToggle] = useState(false)
 
-  const handleToggle = () => updateToggle(!toggle);
+  const handleToggle = () => updateToggle(!toggle)
 
   return (
-    <header className="header">
+    <header className='header'>
       {/* TITLE */}
-      <h2 className="header-title">{title}</h2>
+      <h2 className='header-title'>{title}</h2>
       {/* BUTTON MENU */}
-      <button onClick={handleToggle} className="header-menu">
+      <button onClick={handleToggle} className='header-menu'>
         <img
-          src="https://res.cloudinary.com/dos3i5jqy/image/upload/v1673897021/apollonft/main_o9q12x.svg"
-          alt="icono de menu"
+          src='https://res.cloudinary.com/dos3i5jqy/image/upload/v1673897021/apollonft/main_o9q12x.svg'
+          alt='icono de menu'
         />
       </button>
       {/* NAVBAR */}
       <nav className={`header-nav ${toggle ? 'header-nav-active' : ''}`}>
-        <ul className="header-ul">{navbarLi}</ul>
+        <ul className='header-ul'>{navbarLi}</ul>
       </nav>
       {/* BUTTON */}
-      <button className="header-btn">{button}</button>
+      <button className='header-btn'>{button}</button>
     </header>
-  );
-};
+  )
+}
 
 const HeaderLi = ({ text }) => {
   return (
-    <li className="header-li">
-      <Link className="header-a" to={'/'}>
+    <li className='header-li'>
+      <Link className='header-a' to='/'>
         {text}
       </Link>
     </li>
-  );
-};
+  )
+}
 
-export { Header };
+export { Header }

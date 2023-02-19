@@ -1,5 +1,5 @@
 const Button = ({ className = '', children }) => {
-  return <button className={`btn ${className}`}>{children}</button>;
-};
+  return <button className={`btn ${className}`}>{children}</button>
+}
 
-export { Button };
+export { Button }

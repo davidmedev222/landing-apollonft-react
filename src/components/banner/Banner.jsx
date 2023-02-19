@@ -1,20 +1,20 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/global/GlobalContext';
-import { Button } from '../button/Button';
+import { useContext } from 'react'
+import { GlobalContext } from '../../context/global/GlobalContext'
+import { Button } from '../button/Button'
 
 const Banner = () => {
-  const { banner } = useContext(GlobalContext);
+  const { banner } = useContext(GlobalContext)
 
-  const { title, button } = banner;
+  const { title, button } = banner
 
   return (
-    <section className="banner">
+    <section className='banner'>
       {/* TITLE */}
-      <h3 className="banner-title">{title}</h3>
+      <h3 className='banner-title'>{title}</h3>
       {/* BUTTON */}
-      <Button className="banner-btn">{button}</Button>
+      <Button className='banner-btn'>{button}</Button>
     </section>
-  );
-};
+  )
+}
 
-export { Banner };
+export { Banner }

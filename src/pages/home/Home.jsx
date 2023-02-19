@@ -1,4 +1,4 @@
-import { Hero, Stats, Brands, Shop, Creations, Banner } from '../../components/export';
+import { Hero, Stats, Brands, Shop, Creations, Banner } from '../../components/export'
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Creations />
       <Banner />
     </main>
-  );
-};
+  )
+}
 
-export { Home };
+export { Home }

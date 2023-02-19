@@ -1,23 +1,23 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/global/GlobalContext';
+import { useContext } from 'react'
+import { GlobalContext } from '../../context/global/GlobalContext'
 
 const Stats = () => {
-  const { stats } = useContext(GlobalContext);
+  const { stats } = useContext(GlobalContext)
 
   const statsLi = stats.map(({ id, title, stat }) => (
     <StatsLi key={id} title={title} stat={stat} />
-  )); // COMPONENT
+  )) // COMPONENT
 
-  return <ul className="stats">{statsLi}</ul>;
-};
+  return <ul className='stats'>{statsLi}</ul>
+}
 
 const StatsLi = ({ title, stat }) => {
   return (
-    <li className="stats-li">
-      <span className="stats-title">{title}</span>
-      <span className="stats-stat">{stat}</span>
+    <li className='stats-li'>
+      <span className='stats-title'>{title}</span>
+      <span className='stats-stat'>{stat}</span>
     </li>
-  );
-};
+  )
+}
 
-export { Stats };
+export { Stats }
