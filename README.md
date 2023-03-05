@@ -9,7 +9,7 @@
      <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
 
-## **📂IMAGES**
+## **📸IMAGES**
 
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft1_jf9uic.jpg)
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft2_vn3soz.jpg)
@@ -17,7 +17,7 @@
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft4_suy8he.jpg)
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft5_owwi9k.jpg)
 
-# **💥DEMO**
+# **🚀DEMO**
 
 [https://apollonft.vercel.app/](https://apollonft.vercel.app/)
 
