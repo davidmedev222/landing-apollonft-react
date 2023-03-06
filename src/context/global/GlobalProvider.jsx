@@ -18,14 +18,14 @@ const GlobalProvider = ({ children }) => {
         {
           id: 1,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548713/apollonft/hero-img1_wzgbg3.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/hero-img1_wzgbg3_j7fwm3.webp',
           alt: 'mono nft',
           className: 'hero-img hero-img-one'
         },
         {
           id: 2,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548714/apollonft/hero-img2_v5k5ng.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146118/apollonft/images/hero-img2_rfg7tq.webp',
           alt: 'mono nft',
           className: 'hero-img hero-img-two'
         }
@@ -76,7 +76,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 1,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548713/apollonft/img1_wxmb4u.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img1_wxmb4u_tup2cl.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -87,7 +87,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 2,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548713/apollonft/img6_udz799.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img6_udz799_nrzc7m.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -98,7 +98,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 3,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548713/apollonft/img2_qwi8hz.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img2_qwi8hz_kotmsj.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -109,7 +109,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 4,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548713/apollonft/img7_kwb15r.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img7_kwb15r_gds9sd.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -120,7 +120,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 5,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548712/apollonft/img5_ogpksq.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img5_ogpksq_pxfjla.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -131,7 +131,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 6,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548712/apollonft/img4_nmbyof.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img4_nmbyof_afqk8v.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -142,7 +142,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 7,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548712/apollonft/img3_hkn0xh.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img3_hkn0xh_whvgrd.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
@@ -153,7 +153,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 8,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673548712/apollonft/img8_r6byjh.png',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img8_r6byjh_qx8oc1.webp',
           name: 'ArtCrypto',
           icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
           value: '0.25 ETH',
