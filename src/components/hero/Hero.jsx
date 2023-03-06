@@ -29,7 +29,7 @@ const Hero = () => {
       {/* PARAGRAPH */}
       <p data-mask={isIntersecting} className='hero-paragraph'>{paragraph}</p>
       {/* IMAGES */}
-      <div data-mask={isIntersecting} className='hero-images'>{heroImages}</div>
+      <div className='hero-images'>{heroImages}</div>
     </section>
   )
 }
