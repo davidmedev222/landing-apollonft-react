@@ -1,9 +1,14 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { GlobalContext } from '../../context/global/GlobalContext'
+import { useIntersection } from '../../hooks/intersection/useIntersection'
 
 const Footer = () => {
   const { footer } = useContext(GlobalContext)
+
+  const [elementRef, isIntersecting] = useIntersection({
+    threshold: 0.5
+  }, true)
 
   const { title, paragraph, social, navbar, copyright } = footer
 
@@ -16,17 +21,17 @@ const Footer = () => {
   )) // COMPONENT
 
   return (
-    <footer className='footer'>
+    <footer ref={elementRef} data-opacity data-view={isIntersecting} className='footer'>
       {/* TITLE */}
-      <h3 className='footer-title'>{title}</h3>
+      <h3 data-mask={isIntersecting} className='footer-title'>{title}</h3>
       {/* PARAGRAPH */}
-      <p className='footer-paragraph'>{paragraph}</p>
+      <p data-mask={isIntersecting} className='footer-paragraph'>{paragraph}</p>
       {/* SOCIALS */}
-      <ul className='footer-socials'>{footerSocials}</ul>
+      <ul data-mask={isIntersecting} className='footer-socials'>{footerSocials}</ul>
       {/* NAVBAR */}
-      <nav className='footer-nav'>{footerNavbar}</nav>
+      <nav data-mask={isIntersecting} className='footer-nav'>{footerNavbar}</nav>
       {/* COPYRIGHT */}
-      <h4 className='footer-copyright'>{copyright}</h4>
+      <h4 data-mask={isIntersecting} className='footer-copyright'>{copyright}</h4>
     </footer>
   )
 }

@@ -1,22 +1,20 @@
 import { useContext } from 'react'
 import { GlobalContext } from '../../context/global/GlobalContext'
+import { useIntersection } from '../../hooks/intersection/useIntersection'
+import { BrandsItem } from './BrandsItem'
 
 const Brands = () => {
   const { brands } = useContext(GlobalContext)
 
+  const [elementRef, isIntersecting] = useIntersection({
+    threshold: 0.5
+  }, true)
+
   const brandsItem = brands.map(({ id, icon, alt }) => (
-    <BrandsItem key={id} icon={icon} alt={alt} />
+    <BrandsItem key={id} icon={icon} alt={alt} isIntersecting={isIntersecting} />
   )) // COMPONENT
 
-  return <ul className='brands'>{brandsItem}</ul>
-}
-
-const BrandsItem = ({ icon, alt }) => {
-  return (
-    <li className='brands-li'>
-      <img className='brands-img' src={icon} alt={alt} />
-    </li>
-  )
+  return <ul ref={elementRef} data-opacity data-view={isIntersecting} className='brands'>{brandsItem}</ul>
 }
 
 export { Brands }

@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { GlobalContext } from '../../context/global/GlobalContext'
-
+import { HeroImage } from './HeroImage'
+import { useIntersection } from '../../hooks/intersection/useIntersection'
 const Hero = () => {
   const { hero } = useContext(GlobalContext)
 
@@ -11,26 +12,26 @@ const Hero = () => {
     return <HeroImage key={id} image={image} alt={alt} className={className} />
   }) // COMPONENT
 
+  const [elementRef, isIntersecting] = useIntersection({
+    threshold: 0.5
+  }, true)
+
   return (
-    <section className='hero'>
+    <section ref={elementRef} data-opacity data-view={isIntersecting} className='hero'>
       {/* TITLE */}
-      <h1 className='hero-title'>
+      <h1 data-mask={isIntersecting} className='hero-title'>
         {title1}
         <span className='hero-span'> {span} </span>
         {title2}
       </h1>
       {/* BUTTON */}
-      <button className='hero-button'>{button}</button>
+      <button data-mask={isIntersecting} className='hero-button'>{button}</button>
       {/* PARAGRAPH */}
-      <p className='hero-paragraph'>{paragraph}</p>
+      <p data-mask={isIntersecting} className='hero-paragraph'>{paragraph}</p>
       {/* IMAGES */}
-      <div className='hero-images'>{heroImages}</div>
+      <div data-mask={isIntersecting} className='hero-images'>{heroImages}</div>
     </section>
   )
-}
-
-const HeroImage = ({ className = '', image, alt }) => {
-  return <img className={className} src={image} alt={alt} />
 }
 
 export { Hero }

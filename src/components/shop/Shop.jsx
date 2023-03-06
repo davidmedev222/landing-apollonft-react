@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import { GlobalContext } from '../../context/global/GlobalContext'
 import { Button } from '../button/Button'
+import { ShopArticles } from './ShopArticle'
+import { ShopButtons } from './ShopButtons'
 
 const Shop = () => {
   const { shop } = useContext(GlobalContext)
@@ -20,32 +22,6 @@ const Shop = () => {
       <div className='shop-content'>{shopArticles}</div>
       <Button>{button}</Button>
     </section>
-  )
-}
-
-const ShopButtons = ({ text, className = '' }) => {
-  return (
-    <li className='shop-li'>
-      <button className={`shop-btn-filter ${className}`}>{text}</button>
-    </li>
-  )
-}
-
-const ShopArticles = ({ image, name, icon, value, page, hour, bid }) => {
-  return (
-    <article className='shop-art'>
-      <img className='shop-img' src={image} alt={name} />
-      <h4 className='shop-name'>{name}</h4>
-      <header className='shop-header'>
-        <img className='shop-icon' src={icon} alt={name} />
-        <span className='shop-value'>{value}</span>
-        <span className='shop-page'>{page}</span>
-      </header>
-      <footer className='shop-footer'>
-        <span className='shop-hour'>{hour}</span>
-        <span className='shop-bid'>{bid}</span>
-      </footer>
-    </article>
   )
 }
 
