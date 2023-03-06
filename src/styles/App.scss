@@ -1,6 +1,7 @@
 //? GLOBAL
 @use './global/mixins';
 @use './global/reset';
+@use './global/animations';
 
 //? COMPONENTS
 @use '../components/button/Button';
