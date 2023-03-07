@@ -27,4 +27,4 @@ Apollo NFT, landing page where you can find information about the nft market and
 
 # **🌐TECHNOLOGIES USED**
 
-Use of `React` for the interface, `Sass` for the styles, `Git` for project version control.
+I use `ViteJs` as development framework, `ReactJs` for interface development, `Sass` for style development, `Context API` for global state management, `React Router Dom` for project routing, `Husky` for Git hook execution, `StandardJs` as code linter, `Pnpm` for package management, `Git` for version control and `Github` for hosting the project code.
