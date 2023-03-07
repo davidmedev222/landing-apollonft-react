@@ -1,6 +1,6 @@
 import { Hero, Stats, Brands, Shop, Creations, Banner } from '../../components/export'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main>
       <Hero />
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export { Home }
+export { HomePage }

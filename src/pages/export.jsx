@@ -1,4 +1,4 @@
-import { Layout } from './layout/Layout'
-import { Home } from './home/Home'
+import { LayoutPages } from './layout/LayoutPages'
+import { HomePage } from './home/HomePage'
 
-export { Layout, Home }
+export { LayoutPages, HomePage }
