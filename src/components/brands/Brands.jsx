@@ -12,7 +12,7 @@ const Brands = () => {
 
   const brandsItem = brands.map(({ id, icon, alt }) => (
     <BrandsItem key={id} icon={icon} alt={alt} isIntersecting={isIntersecting} />
-  )) // COMPONENT
+  ))
 
   return <ul ref={elementRef} data-opacity data-view={isIntersecting} className='brands'>{brandsItem}</ul>
 }

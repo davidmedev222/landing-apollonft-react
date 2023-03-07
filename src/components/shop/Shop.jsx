@@ -11,7 +11,7 @@ const Shop = () => {
 
   const shopButtons = buttons.map(({ id, text, className }) => (
     <ShopButtons key={id} text={text} className={className} />
-  )) // COMPONENT
+  ))
 
   const shopArticles = articles.map((cadaArt) => <ShopArticles key={cadaArt.id} {...cadaArt} />)
 

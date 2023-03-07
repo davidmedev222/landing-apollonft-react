@@ -10,7 +10,7 @@ const Hero = () => {
   const heroImages = images.map((cadaImagen) => {
     const { id, image, alt, className } = cadaImagen
     return <HeroImage key={id} image={image} alt={alt} className={className} />
-  }) // COMPONENT
+  })
 
   const [elementRef, isIntersecting] = useIntersection({
     threshold: 0.5

@@ -11,7 +11,7 @@ const Header = () => {
   const navbarLi = navbar.map((cadaLi) => {
     const { id, text, to } = cadaLi
     return <HeaderLi key={id} text={text} to={to} />
-  }) // COMPONENT
+  })
 
   const [toggle, updateToggle] = useState(false)
 

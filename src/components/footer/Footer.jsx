@@ -14,11 +14,11 @@ const Footer = () => {
 
   const footerSocials = social.map(({ id, icon, alt }) => (
     <FooterSocial key={id} icon={icon} alt={alt} />
-  )) // COMPONENT
+  ))
 
   const footerNavbar = navbar.map(({ id, title, links }) => (
     <FooterNavbar key={id} title={title} links={links} />
-  )) // COMPONENT
+  ))
 
   return (
     <footer ref={elementRef} data-opacity data-view={isIntersecting} className='footer'>

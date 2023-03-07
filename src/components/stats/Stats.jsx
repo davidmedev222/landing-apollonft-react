@@ -11,7 +11,7 @@ const Stats = () => {
 
   const statsLi = stats.map(({ id, title, stat }) => (
     <StatsLi key={id} title={title} stat={stat} isIntersecting={isIntersecting} />
-  )) // COMPONENT
+  ))
 
   return <ul ref={elementRef} data-opacity data-view={isIntersecting} className='stats'>{statsLi}</ul>
 }
