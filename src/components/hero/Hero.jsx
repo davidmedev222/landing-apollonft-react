@@ -25,9 +25,9 @@ const Hero = () => {
         {title2}
       </h1>
       {/* BUTTON */}
-      <button data-mask={isIntersecting} className='hero-button'>{button}</button>
+      <button data-delay='700' data-mask-hidden data-mask={isIntersecting} className='hero-button'>{button}</button>
       {/* PARAGRAPH */}
-      <p data-mask={isIntersecting} className='hero-paragraph'>{paragraph}</p>
+      <p data-delay='1500' data-mask-hidden data-mask={isIntersecting} className='hero-paragraph'>{paragraph}</p>
       {/* IMAGES */}
       <div className='hero-images'>{heroImages}</div>
     </section>

@@ -5,10 +5,12 @@
 [data-view=true] {
   animation: view 1500ms ease-in-out forwards;
 }
+[data-mask-hidden]{
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
 [data-mask=true] {
   animation: mask 1000ms ease-in-out forwards;
 }
-
 //? KEYFRAMES
 @keyframes view {
   0%{
@@ -21,7 +23,6 @@
     opacity: 1;
   }
 }
-
 @keyframes mask {
   0% {
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -29,4 +30,32 @@
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+}
+//? DELAYS
+[data-delay="300"]{
+  animation-delay: 300ms;
+}
+[data-delay="500"]{
+  animation-delay: 500ms;
+}
+[data-delay="700"]{
+  animation-delay: 700ms;
+}
+[data-delay="900"]{
+  animation-delay: 900ms;
+}
+[data-delay="1100"]{
+  animation-delay: 1100ms;
+}
+[data-delay="1300"]{
+  animation-delay: 1300ms;
+}
+[data-delay="1500"]{
+  animation-delay: 1500ms;
+}
+[data-delay="1700"]{
+  animation-delay: 1700ms;
+}
+[data-delay="1900"]{
+  animation-delay: 1900ms;
 }

@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header ref={elementRef} data-opacity data-view={isIntersecting} className='header'>
       {/* TITLE */}
-      <Link to='/' data-mask={isIntersecting} className='header-title'>{title}</Link>
+      <Link to='/' data-delay='700' data-mask-hidden data-mask={isIntersecting} className='header-title'>{title}</Link>
       {/* BUTTON MENU */}
       <button data-mask={isIntersecting} onClick={handleToggle} className='header-menu'>
         <img
@@ -33,7 +33,7 @@ const Header = () => {
         />
       </button>
       {/* NAVBAR */}
-      <nav data-mask={isIntersecting} className={`header-nav ${toggle ? 'header-nav-active' : ''}`}>
+      <nav data-delay='1300' data-mask-hidden data-mask={isIntersecting} className={`header-nav ${toggle ? 'header-nav-active' : ''}`}>
         <ul className='header-ul'>{navbarLi}</ul>
       </nav>
       {/* BUTTON */}
