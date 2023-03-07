@@ -197,42 +197,42 @@ const GlobalProvider = ({ children }) => {
           {
             id: 1,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559116/apollonft/users/user1_nnydjy.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user1_nnydjy_kbrbdf.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           },
           {
             id: 2,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559116/apollonft/users/user3_oeszuw.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user3_oeszuw_rqjq0m.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           },
           {
             id: 3,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559116/apollonft/users/user2_zumdgm.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user2_zumdgm_gttnum.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           },
           {
             id: 4,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559117/apollonft/users/user5_wom56h.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user5_wom56h_an7mgm.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           },
           {
             id: 5,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559117/apollonft/users/user6_x13lad.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user6_x13lad_ef47ox.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           },
           {
             id: 6,
             image:
-              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673559117/apollonft/users/user4_nd8ijm.png',
+              'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678147271/apollonft/users/user4_nd8ijm_lfiafp.webp',
             name: 'Eka Prakasa',
             stat: '12.2k'
           }
