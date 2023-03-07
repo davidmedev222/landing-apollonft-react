@@ -8,7 +8,10 @@ const Header = () => {
 
   const { title, navbar, button } = header
 
-  const navbarLi = navbar.map((cadaLi) => <HeaderLi key={cadaLi} text={cadaLi} />) // COMPONENT
+  const navbarLi = navbar.map((cadaLi) => {
+    const { id, text, to } = cadaLi
+    return <HeaderLi key={id} text={text} to={to} />
+  }) // COMPONENT
 
   const [toggle, updateToggle] = useState(false)
 
@@ -21,7 +24,7 @@ const Header = () => {
   return (
     <header ref={elementRef} data-opacity data-view={isIntersecting} className='header'>
       {/* TITLE */}
-      <h2 data-mask={isIntersecting} className='header-title'>{title}</h2>
+      <Link to='/' data-mask={isIntersecting} className='header-title'>{title}</Link>
       {/* BUTTON MENU */}
       <button data-mask={isIntersecting} onClick={handleToggle} className='header-menu'>
         <img
@@ -39,10 +42,10 @@ const Header = () => {
   )
 }
 
-const HeaderLi = ({ text }) => {
+const HeaderLi = ({ to, text }) => {
   return (
     <li className='header-li'>
-      <Link className='header-a' to='/'>
+      <Link className='header-a' to={to}>
         {text}
       </Link>
     </li>

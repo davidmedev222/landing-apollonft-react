@@ -4,7 +4,28 @@ const GlobalProvider = ({ children }) => {
   const data = {
     header: {
       title: 'ApolloNFT',
-      navbar: ['Drop', 'Marketplace', 'Creator', 'Community'],
+      navbar: [
+        {
+          id: 1,
+          text: 'Drop',
+          to: 'drop'
+        },
+        {
+          id: 2,
+          text: 'Marketplace',
+          to: 'marketplace'
+        },
+        {
+          id: 3,
+          text: 'Creator',
+          to: 'creator'
+        },
+        {
+          id: 4,
+          text: 'Community',
+          to: 'community'
+        }
+      ],
       button: 'Contact Us'
     },
     hero: {
