@@ -140,17 +140,3 @@ svg {
   display: block;
   fill: currentColor;
 }
-
-// ( OPCIONAL )
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-// ( OPCIONAL )
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
-}
