@@ -6,16 +6,16 @@ const IconWallet = () => {
       <path d='M36 25.8C37.1046 25.8 38 24.9046 38 23.8C38 22.6955 37.1046 21.8 36 21.8C34.8954 21.8 34 22.6955 34 23.8C34 24.9046 34.8954 25.8 36 25.8Z' fill='url(#paint2_linear_9_280)' />
       <defs>
         <linearGradient id='paint0_linear_9_280' x1='22.2645' y1='2.53334' x2='57.6112' y2='18.8938' gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#8D1CFE' />
-          <stop offset='1' stop-color='#0038ED' />
+          <stop stopColor='#8D1CFE' />
+          <stop offset='1' stopColor='#0038ED' />
         </linearGradient>
         <linearGradient id='paint1_linear_9_280' x1='37.4793' y1='19.0297' x2='46.7395' y2='24.816' gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#8D1CFE' />
-          <stop offset='1' stop-color='#0038ED' />
+          <stop stopColor='#8D1CFE' />
+          <stop offset='1' stopColor='#0038ED' />
         </linearGradient>
         <linearGradient id='paint2_linear_9_280' x1='35.8264' y1='21.4149' x2='39.4837' y2='22.9384' gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#8D1CFE' />
-          <stop offset='1' stop-color='#0038ED' />
+          <stop stopColor='#8D1CFE' />
+          <stop offset='1' stopColor='#0038ED' />
         </linearGradient>
       </defs>
     </svg>
