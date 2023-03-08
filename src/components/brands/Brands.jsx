@@ -10,8 +10,8 @@ const Brands = () => {
     threshold: 0.5
   }, true)
 
-  const brandsItem = brands.map(({ id, icon, alt }) => (
-    <BrandsItem key={id} icon={icon} alt={alt} isIntersecting={isIntersecting} />
+  const brandsItem = brands.map(({ id, icon }) => (
+    <BrandsItem key={id} icon={icon} isIntersecting={isIntersecting} />
   ))
 
   return <ul ref={elementRef} data-opacity data-view={isIntersecting} className='brands'>{brandsItem}</ul>

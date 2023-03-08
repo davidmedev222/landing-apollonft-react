@@ -10,7 +10,7 @@ const ShopArticles = ({ image, name, icon, value, page, hour, bid }) => {
       <img data-mask={isIntersecting} className='shop-img' src={image} alt={name} />
       <h4 data-mask={isIntersecting} className='shop-name'>{name}</h4>
       <header data-mask={isIntersecting} className='shop-header'>
-        <img className='shop-icon' src={icon} alt={name} />
+        {icon}
         <span className='shop-value'>{value}</span>
         <span className='shop-page'>{page}</span>
       </header>

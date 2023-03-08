@@ -9,7 +9,7 @@
   background-color: var(--background-two);
   border-radius: clamp(1rem, 1vw, 2rem);
 
-  &-icon {
+  & svg{
     width: clamp(3rem, 3vw, 6rem);
   }
   &-title {

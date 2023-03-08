@@ -1,4 +1,5 @@
 import { GlobalContext } from './GlobalContext'
+import { IconDropbox, IconSpotify, IconCoinbase, IconSlack, IconWebFlow, IconEth, IconWallet, IconBuy, IconCategory, IconTwitter, IconLinkedin, IconGithub, IconFacebook } from '../../components/export'
 
 const GlobalProvider = ({ children }) => {
   const data = {
@@ -60,28 +61,23 @@ const GlobalProvider = ({ children }) => {
     brands: [
       {
         id: 1,
-        icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673556438/apollonft/coinbase_ekf4za.svg',
-        alt: 'icono coinbase'
+        icon: <IconDropbox />
       },
       {
         id: 2,
-        icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673556438/apollonft/spotify_iutqi0.svg',
-        alt: 'icono spotify'
+        icon: <IconSpotify />
       },
       {
         id: 3,
-        icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673556438/apollonft/slack_yik87q.svg',
-        alt: 'icono slack'
+        icon: <IconSlack />
       },
       {
         id: 4,
-        icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673556438/apollonft/webflow_i8kuha.svg',
-        alt: 'icono webflow'
+        icon: <IconCoinbase />
       },
       {
         id: 5,
-        icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673556438/apollonft/dropbox_f1kkyk.svg',
-        alt: 'icono dropbox'
+        icon: <IconWebFlow />
       }
     ],
     shop: {
@@ -99,7 +95,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img1_wxmb4u_tup2cl.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -110,7 +106,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img6_udz799_nrzc7m.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -121,7 +117,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img2_qwi8hz_kotmsj.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -132,7 +128,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img7_kwb15r_gds9sd.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -143,7 +139,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img5_ogpksq_pxfjla.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -154,7 +150,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img4_nmbyof_afqk8v.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -165,7 +161,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img3_hkn0xh_whvgrd.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -176,7 +172,7 @@ const GlobalProvider = ({ children }) => {
           image:
             'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/img8_r6byjh_qx8oc1.webp',
           name: 'ArtCrypto',
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673557547/apollonft/eth_t5iunn.svg',
+          icon: <IconEth />,
           value: '0.25 ETH',
           page: '1 of 32',
           hour: '3h 25m 3s',
@@ -191,21 +187,21 @@ const GlobalProvider = ({ children }) => {
         articles: [
           {
             id: 1,
-            icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673558743/apollonft/wallet_n4iwd2.svg',
+            icon: <IconWallet />,
             title: 'Connect Wallet',
             paragraph:
               'This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.'
           },
           {
             id: 2,
-            icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673558745/apollonft/buy_tgy1oz.svg',
+            icon: <IconBuy />,
             title: 'NFT Marketplace',
             paragraph:
               'This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.'
           },
           {
             id: 3,
-            icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673558746/apollonft/category_wurcpj.svg',
+            icon: <IconCategory />,
             title: 'Collect NFT',
             paragraph:
               'This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.'
@@ -272,23 +268,19 @@ const GlobalProvider = ({ children }) => {
       social: [
         {
           id: 1,
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673560541/apollonft/icons/twitter_jzyuz3.svg',
-          alt: 'icono de twitter'
+          icon: <IconTwitter />
         },
         {
           id: 2,
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673560540/apollonft/icons/linkedin_g3s1u2.svg',
-          alt: 'icono de linkedin'
+          icon: <IconLinkedin />
         },
         {
           id: 3,
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673560537/apollonft/icons/github_raqc62.svg',
-          alt: 'icono de github'
+          icon: <IconGithub />
         },
         {
           id: 4,
-          icon: 'https://res.cloudinary.com/dos3i5jqy/image/upload/v1673560538/apollonft/icons/facebook_djgcvo.svg',
-          alt: 'icono de facebook'
+          icon: <IconFacebook />
         }
       ],
       navbar: [

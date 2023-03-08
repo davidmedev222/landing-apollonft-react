@@ -1,7 +1,7 @@
-const BrandsItem = ({ icon, alt, isIntersecting }) => {
+const BrandsItem = ({ icon, isIntersecting }) => {
   return (
     <li data-mask={isIntersecting} className='brands-li'>
-      <img className='brands-img' src={icon} alt={alt} />
+      {icon}
     </li>
   )
 }

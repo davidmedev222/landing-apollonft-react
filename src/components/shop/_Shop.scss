@@ -51,9 +51,10 @@
     width: 100%;
     @include flex(row, nowrap, flex-start, center);
     gap: clamp(0.375rem, 0.5vw, 1rem);
-  }
-  &-icon {
-    width: clamp(2.5rem, 2.5vw, 10rem);
+
+    & svg{
+      flex-basis: clamp(2.5rem, 2.5vw, 5rem);
+    }
   }
   &-value {
     color: #815ee3;

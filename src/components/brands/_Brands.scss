@@ -7,7 +7,7 @@
   gap: clamp(2.5rem, 5vw, 10rem);
   padding: clamp(3rem, 3.5vw, 7rem) clamp(1.5rem, 7.5vw, 15rem);
 
-  &-img {
-    width: clamp(8.5rem, 8.75vw, 17.5rem);
+  &-li {
+    flex-basis: clamp(10rem, 15.5vw, 31rem);
   }
 }

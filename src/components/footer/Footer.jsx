@@ -12,8 +12,8 @@ const Footer = () => {
 
   const { title, paragraph, social, navbar, copyright } = footer
 
-  const footerSocials = social.map(({ id, icon, alt }) => (
-    <FooterSocial key={id} icon={icon} alt={alt} />
+  const footerSocials = social.map(({ id, icon }) => (
+    <FooterSocial key={id} icon={icon} />
   ))
 
   const footerNavbar = navbar.map(({ id, title, links }) => (
@@ -36,10 +36,10 @@ const Footer = () => {
   )
 }
 
-const FooterSocial = ({ icon, alt }) => {
+const FooterSocial = ({ icon }) => {
   return (
     <li className='footer-li'>
-      <img className='footer-icon' src={icon} alt={alt} />
+      {icon}
     </li>
   )
 }
