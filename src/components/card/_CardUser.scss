@@ -11,6 +11,7 @@
 
   &-img {
     width: clamp(3.75rem, 3.75vw, 7.5rem);
+    aspect-ratio: 1;
   }
   &-header {
     @include flex(column, nowrap, center, flex-start);

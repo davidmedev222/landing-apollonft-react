@@ -41,6 +41,7 @@
   }
   &-img {
     border-radius: clamp(0.5rem, 1vw, 2rem);
+    aspect-ratio: 1;
   }
   &-name {
     color: #242323;
