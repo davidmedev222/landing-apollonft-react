@@ -1,6 +1,6 @@
-const IconEth = ({ className }) => {
+const IconEth = () => {
   return (
-    <svg className={className ?? ''} viewBox='0 0 43 45' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <svg viewBox='0 0 43 45' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <g opacity='0.3' filter='url(#filter0_f_5_969)'>
         <path d='M18.6854 11.625C20.4271 10.6195 22.5729 10.6195 24.3146 11.625V11.625C26.0563 12.6306 27.1292 14.4889 27.1292 16.5V16.5C27.1292 18.5111 26.0563 20.3695 24.3146 21.375V21.375C22.5729 22.3806 20.4271 22.3806 18.6854 21.375V21.375C16.9438 20.3695 15.8708 18.5111 15.8708 16.5V16.5C15.8708 14.4889 16.9438 12.6306 18.6854 11.625V11.625Z' fill='#451FAD' />
       </g>
