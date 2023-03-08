@@ -1,13 +1,14 @@
-import { Banner } from './banner/Banner'
-import { Brands } from './brands/Brands'
-import { Button } from './button/Button'
-import { Card } from './card/Card'
-import { CardUser } from './card/CardUser'
-import { Creations } from './creations/Creations'
-import { Footer } from './footer/Footer'
-import { Header } from './header/Header'
-import { Hero } from './hero/Hero'
-import { Shop } from './shop/Shop'
-import { Stats } from './stats/Stats'
+// ? COMPONENTS
+export { Banner } from './banner/Banner'
+export { Brands } from './brands/Brands'
+export { Button } from './button/Button'
+export { Card } from './card/Card'
+export { CardUser } from './card/CardUser'
+export { Creations } from './creations/Creations'
+export { Footer } from './footer/Footer'
+export { Header } from './header/Header'
+export { Hero } from './hero/Hero'
+export { Shop } from './shop/Shop'
+export { Stats } from './stats/Stats'
 
-export { Banner, Brands, Button, Card, CardUser, Creations, Footer, Header, Hero, Shop, Stats }
+// ? ICONS
