@@ -9,8 +9,8 @@ const Header = () => {
   const { title, navbar, button } = header
 
   const navbarLi = navbar.map((cadaLi) => {
-    const { id, text, to } = cadaLi
-    return <HeaderLi key={id} text={text} to={to} />
+    const { id, text } = cadaLi
+    return <HeaderLi key={id} text={text} />
   })
 
   const [toggle, updateToggle] = useState(false)
@@ -42,10 +42,10 @@ const Header = () => {
   )
 }
 
-const HeaderLi = ({ to, text }) => {
+const HeaderLi = ({ text }) => {
   return (
     <li className='header-li'>
-      <Link className='header-a' to={to}>
+      <Link className='header-a' to='#'>
         {text}
       </Link>
     </li>
