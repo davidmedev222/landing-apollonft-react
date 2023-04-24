@@ -3,11 +3,15 @@
 # **📑GUIDE**
 
 <ol>
-     <li><a href="#images">Images</a></li>
      <li><a href="#demo">Demo</a></li>
+     <li><a href="#images">Images</a></li>
      <li><a href="#about-the-project">About The Project</a></li>
      <li><a href="#technologies-used">Technologies Used</a></li>
 </ol>
+
+# **🚀DEMO**
+
+[https://apollonft.vercel.app/](https://apollonft.vercel.app/)
 
 ## **📸IMAGES**
 
@@ -16,10 +20,6 @@
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft3_z5meal.jpg)
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft4_suy8he.jpg)
 ![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1673908260/apollonft/readme/apollonft5_owwi9k.jpg)
-
-# **🚀DEMO**
-
-[https://apollonft.vercel.app/](https://apollonft.vercel.app/)
 
 # **💬ABOUT THE PROJECT**
 
