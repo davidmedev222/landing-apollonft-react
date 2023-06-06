@@ -1,5 +1,19 @@
+import {
+  IconBuy,
+  IconCategory,
+  IconCoinbase,
+  IconDropbox,
+  IconEth,
+  IconFacebook,
+  IconGithub,
+  IconLinkedin,
+  IconSlack,
+  IconSpotify,
+  IconTwitter,
+  IconWallet,
+  IconWebFlow
+} from '../../components/export'
 import { GlobalContext } from './GlobalContext'
-import { IconDropbox, IconSpotify, IconCoinbase, IconSlack, IconWebFlow, IconEth, IconWallet, IconBuy, IconCategory, IconTwitter, IconLinkedin, IconGithub, IconFacebook } from '../../components/export'
 
 const GlobalProvider = ({ children }) => {
   const data = {
@@ -40,7 +54,7 @@ const GlobalProvider = ({ children }) => {
         {
           id: 1,
           image:
-            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1678146117/apollonft/images/hero-img1_wzgbg3_j7fwm3.webp',
+            'https://res.cloudinary.com/dos3i5jqy/image/upload/v1686082899/apollonft/images/mono_vuzydr.webp',
           alt: 'mono nft',
           className: 'hero-img hero-img-one'
         },
